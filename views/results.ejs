@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Aadhaar Details</title>
+  <style>
+    body { font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px; }
+    .container { background: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+    h1 { color: #333; text-align: center; }
+    .result-box { margin: 20px 0; padding: 15px; background: white; border-radius: 4px; }
+    p { margin: 10px 0; }
+    img { max-width: 100%; border: 1px solid #ddd; margin-top: 10px; }
+    a { color: #4CAF50; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Extracted Aadhaar Details</h1>
+    <div class="result-box">
+      <p><strong>Name:</strong> <%= name %></p>
+      <p><strong>Aadhaar Number:</strong> <%= aadhaarNumber %></p>
+      <img src="/<%= imagePath.replace('public/', '') %>" alt="Uploaded Aadhaar">
+    </div>
+    <a href="/">← Upload Another</a>
+  </div>
+</body>
+</html>
